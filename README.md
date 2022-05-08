@@ -2,7 +2,7 @@
 Trackline Follower project, for the EENG4 Innovation Project
 
 # Output example
-![Trackline Follower Example](https://im4.ezgif.com/tmp/ezgif-4-8324b0aad6.gif)
+![Trackline Follower Example](https://github.com/mAxYoLo01/TracklineFollower/blob/main/videos/example.gif)
 From top to bottom, right to left:
 - Original video
 - Masked video
