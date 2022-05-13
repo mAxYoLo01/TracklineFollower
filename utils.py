@@ -18,3 +18,9 @@ def concat_tile_resize(im_list_2d, interpolation=cv2.INTER_CUBIC):
     im_list_v = [hconcat_resize_min(im_list_h, interpolation=cv2.INTER_CUBIC) for im_list_h in im_list_2d]
     im_list =  vconcat_resize_min(im_list_v, interpolation=cv2.INTER_CUBIC)
     return cv2.resize(im_list, (1600, 900), interpolation=interpolation)
+
+"""From https://math.stackexchange.com/questions/1398634/finding-a-perpendicular-vector-from-a-line-to-a-point"""
+
+def project_point_on_line(slope, intercept, point):
+    x = (point[0] + slope * (point[1] - intercept)) / (1 + pow(slope, 2))
+    return (x, x * slope + intercept)
